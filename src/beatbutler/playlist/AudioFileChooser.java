@@ -8,7 +8,7 @@ import java.io.File;
  * @author Tomasz Wójcik
  */
 public class AudioFileChooser extends JFileChooser {
-    private final static String[] EXTENSIONS = {"mp3", "aac", "wav"};
+    private final static String[] EXTENSIONS = {"mp3", "aiff", "wav"};
 
     public AudioFileChooser() {
         super();
