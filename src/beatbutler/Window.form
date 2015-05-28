@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="beatbutler.Window">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="5" left="5" bottom="5" right="5"/>
+    <constraints>
+      <xy x="113" y="106" width="612" height="365"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="45e59" layout-manager="FormLayout">
+        <rowspec value="center:32px:noGrow"/>
+        <colspec value="fill:32px:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:48px:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:32px:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:20dlu:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:d:grow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:32px:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:32px:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:50dlu:noGrow"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1b749" class="javax.swing.JButton" binding="previousButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <icon value="previous.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="bb0cf" class="javax.swing.JButton" binding="stateButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <icon value="play.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="cd3a2" class="javax.swing.JButton" binding="nextButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <icon value="next.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="9252f" class="javax.swing.JLabel" binding="progressLabel">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Label"/>
+            </properties>
+          </component>
+          <component id="4fdfc" class="javax.swing.JSlider" binding="progressSlider">
+            <constraints>
+              <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <paintLabels value="false"/>
+              <paintTrack value="true"/>
+            </properties>
+            <clientProperties>
+              <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+          <component id="e2ce5" class="javax.swing.JLabel" binding="durationLabel">
+            <constraints>
+              <grid row="0" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text value="Label"/>
+            </properties>
+          </component>
+          <component id="6e674" class="javax.swing.JSlider" binding="volumeSlider">
+            <constraints>
+              <grid row="0" column="18" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+            </properties>
+          </component>
+          <component id="95ead" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <icon value="volume.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="d1d36" class="javax.swing.JToggleButton" binding="shuffleToggleButton">
+            <constraints>
+              <grid row="0" column="12" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <icon value="shuffle.png"/>
+            </properties>
+          </component>
+          <component id="5bf6d" class="javax.swing.JToggleButton" binding="repeatToggleButton">
+            <constraints>
+              <grid row="0" column="14" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <icon value="repeat.png"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="3f9e9">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalScrollBarPolicy value="31"/>
+          <verticalScrollBarPolicy value="20"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="be803" class="javax.swing.JList" binding="playlistJList">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="54509" layout-manager="FormLayout">
+        <rowspec value="center:26px:noGrow"/>
+        <colspec value="fill:max(d;4px):grow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:m:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:m:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:max(d;4px):noGrow"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="db53e" class="javax.swing.JLabel" binding="songInfoLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text value="Label"/>
+            </properties>
+          </component>
+          <component id="8b39e" class="javax.swing.JButton" binding="addButton">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font size="9"/>
+              <text value="&amp;import"/>
+            </properties>
+          </component>
+          <component id="d453" class="javax.swing.JButton" binding="removeButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font size="9"/>
+              <text value="&amp;remove"/>
+            </properties>
+          </component>
+          <component id="c4124" class="javax.swing.JButton" binding="sortButton">
+            <constraints>
+              <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font size="9"/>
+              <text value="&amp;sort"/>
+            </properties>
+          </component>
+          <component id="c98f6" class="javax.swing.JButton" binding="showButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font size="9"/>
+              <text value="s&amp;how"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
