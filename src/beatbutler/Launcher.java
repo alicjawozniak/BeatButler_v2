@@ -16,12 +16,14 @@ public class Launcher {
             e.printStackTrace();
         }
 
+        final Player player = new Player();
+
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                Player player = new Player();
-                JFrame frame = new Window(player);
-                frame.setVisible(true);
+                Window window = new Window();
+                window.buildGUI(player);
+                window.setVisible(true);
             }
         });
     }

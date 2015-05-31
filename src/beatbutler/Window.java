@@ -9,11 +9,15 @@ import beatbutler.playlist.song.ConcreteSong;
 import beatbutler.playlist.song.Song;
 import javafx.embed.swing.JFXPanel;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -22,10 +26,11 @@ import java.util.concurrent.TimeUnit;
  * @author Tomasz Wójcik
  */
 public class Window extends JFrame {
-    private final Player player;
-    private final Playlist playlist;
     private final Icon playIcon;
     private final Icon pauseIcon;
+    private final List<Image> appIcons;
+    private Player player;
+    private Playlist playlist;
     private JPanel mainPanel;
     private JList<Song> playlistJList;
     private JButton addButton;
@@ -43,16 +48,38 @@ public class Window extends JFrame {
     private JButton showButton;
     private JButton sortButton;
 
-    public Window(Player p) {
-        player = p;
-        playlist = player.getPlaylist();
-
+    public Window() throws HeadlessException {
+        super();
         playIcon = new ImageIcon(getClass().getResource("/play.png"));
         pauseIcon = new ImageIcon(getClass().getResource("/pause.png"));
+
+        appIcons = new ArrayList<>();
+        try {
+            appIcons.add(ImageIO.read(getClass().getResource("/icons/16.png")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            appIcons.add(ImageIO.read(getClass().getResource("/icons/50.png")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            appIcons.add(ImageIO.read(getClass().getResource("/icons/256.png")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void buildGUI(Player p) {
+        player = p;
+        playlist = player.getPlaylist();
 
         // hack
         new JFXPanel();
 
+        setTitle("BeatButler");
+        setIconImages(appIcons);
         setContentPane(mainPanel);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         pack();
